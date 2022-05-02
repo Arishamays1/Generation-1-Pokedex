@@ -1,0 +1,95 @@
+body{
+    font-family: 'VT323', monospace;
+    background: url("https://images.8tracks.com/cover/i/009/758/226/nK8JAYq-1639.jpg?rect=420,0,1080,1080&q=98&fm=jpg&fit=max&w=960&h=960");
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color:rgb(243, 251, 11);
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px;
+}
+.shows{
+    display: flex;
+    justify-content: center;
+    
+}
+.sep-pokeimg{
+    border: double 20px yellow;
+    box-shadow: -5px -5px 30px 5px rgb(221, 255, 0), 5px 5px 30px 5px blue
+}
+.name{
+    color: rgb(242, 246, 0);
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px;
+    font-size: 60px;
+    text-align: center;
+}
+.stats{
+    color:rgb(242, 254, 7);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 8px;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px;
+   
+}
+label{
+    color: rgb(242, 246, 0);
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px;
+    font-size: 35px;
+    
+}
+.form{
+display: flex;
+justify-content: center;
+padding-top: 60px;
+}
+.submitbutton{
+    border: 5px double rgb(227, 227, 171);
+    background: yellow;
+    box-shadow: 6px 4px red;
+    color: black;  
+}
+.pokedexpage{
+    border: 5px double rgb(227, 227, 171);
+    background: yellow;
+    box-shadow: 6px 4px red;
+    color: black;
+    font-size: 80px;
+    text-align: center;
+}
+.enter{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.pokedexpage:hover{
+    box-shadow: 5px 5px 60px 5px rgb(255, 251, 0), 5px 5px 30px 5px blue;
+}
+
+.welcome{
+    padding-top: 50px;
+}
+
+.words{
+    padding:40px;
+}
+
+.delete{
+    border: 5px double rgb(227, 227, 171);
+    background: yellow;
+    box-shadow: 6px 4px red;
+    color: black;
+    font-size: 25px;
+}
+.btn{ 
+   
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+.deletebtn{
+    font-family: 'VT323', monospace;
+    text-decoration: underline;
+}

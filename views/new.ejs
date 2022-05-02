@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/show.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <%-include('navbar.ejs') %>
+    <h1>New Pokemon are being discovered each day! What have you discovered?</h1>
+        <!-- in order for the data to be sent, the form needs to be told to do so. 
+            using post and the objet in which the data will be sent-->
+        <form  class="form" method="POST" action="/pokemon">
+        
+         <div style="display: flex;">
+             <div>
+            <div>
+            <label for="name">Pokemon Name:</label>
+            <input placeholder="Make it interesting!" id='name' name="name" type="text"/>
+                 </div>
+            <div>
+            <label for="img">Pokemon Image:</label>
+            <input placeholder="URL here" id="image" name="img" type="text"/>
+                </div>
+             <div>
+                <label for="type">Pokemon Type: </label>
+                <input placeholder="Class? i.e Grass, Fire.." id="type" name="type" type="text"/>
+             </div>
+             <div>
+            <label for="misc[classification]">Pokemon Classification:</label>
+            <input placeholder="Pokemon type?" id="classification" name="misc[classification]" type="text"/>
+            </div>
+
+            <div>
+                <label for="misc[height]">Pokemon Height:</label>
+                <input placeholder="What's the height?" id="height" name="misc[height]" type="text"/>
+            </div>
+            <div>
+                <label for="misc[weight]">Pokemon Weight:</label>
+                <input  placeholder="What's the weight?" id="weight" name="misc[weight]" type="text"/>
+            </div>
+            <input class="submitbutton" type="submit">    
+        </div>
+    </div></div>
+        </form>
+</body>
+</html>
+

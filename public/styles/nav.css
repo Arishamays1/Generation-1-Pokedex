@@ -1,0 +1,15 @@
+.navbar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.welcome{
+    padding-top: 50px;
+}
+.pokepage{
+    border: 5px double rgb(227, 227, 171);
+    background: yellow;
+    box-shadow: 6px 4px red;
+    color: black;
+    font-size: 25px;
+}

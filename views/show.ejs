@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/show.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+    <body>
+        <%-include('navbar.ejs')%>
+        <div>
+            <h1>
+            <%=poke.id%>
+            </h1> 
+            <div class="shows">
+                <image class="sep-pokeimg"src="<%=poke.img%>"/>
+            </div>
+
+            <div class="name">
+                <%=poke.name%>
+            </div>
+
+            <div class="stats">
+                <div><u>Type:</u> <br/><%= poke.type%><br/></div>
+                <div><u>Classification:</u> <br/><%=poke.misc.classification%> <br/></div>
+                <div><u>Height: </u><br/><%=poke.misc.height%><br/></div>
+                <div><u>Weight:</u> <br/><%=poke.misc.weight%><br/></div>
+              
+
+        </div>
+        <div class="btn">
+         <a class="delete" href="/pokemon/<%=poke.id -1%>/edit">Edit pokemon</a> 
+
+
+        <form  method="POST" action="/pokemon/<%=poke.id -1%>/?_method=DELETE">
+        <input class="delete deletebtn" type='submit' value='Delete'/>
+        </form>
+        </div>
+
+        
+    </body>
+   

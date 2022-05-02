@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('./partials/head.ejs')%>
+
+    <body>
+        <%-include('navbar.ejs') %>
+        <header>
+            <h1>Pokemon:<br/> The Complete 1st Generation Pokedex</h1>
+        </header>
+        <div class="poke-entry">
+        <main class="spaces">
+            <%for(let i=0; i<pokemon.length;i++){%>
+                <%const pokemons= pokemon[i]%>
+               <div class="poke-main">  
+                   <div class="box">
+                       <%=pokemon[i].id%><br/>
+                     <a href="/pokemon/<%=i%>">
+                    <image class="images" src="<%=pokemon[i].img%>"/>
+                    </a>
+                    <h2><%=pokemon[i].name%>
+                    </h2>
+                </div>
+            </div>
+            <%}%>
+
+        </main>
+        </div>
+
+    </body>

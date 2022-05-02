@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <form method="POST" action="/pokemon/<%=id%>?_method=PUT">
+        
+        <div>
+        <label for="name">Pokemon Name:</label>
+        <input id='name'name="name" type="text"/>
+             </div>
+        <div>
+        <label for="img">Pokemon Image:</label>
+        <input id="image" name="img" type="text"/>
+            </div>
+         <div>
+            <label for="type">Pokemon Type: </label>
+            <input id="type" name="type" type="text"/>
+         </div>
+         <div>
+        <label for="misc[classification]">Pokemon Classification:</label>
+        <input id="classification" name="misc[classification]" type="text"/>
+        </div>
+
+        <div>
+            <label for="misc[height]">Pokemon Height:</label>
+            <input id="height" name="misc[height]" type="text"/>
+        </div>
+        <div>
+            <label for="misc[weight]">Pokemon Weight:</label>
+            <input id="weight" name="misc[weight]" type="text"/>
+        </div>
+        <input type="submit">    
+    </div>
+    </form>
+</body>
+</html>
